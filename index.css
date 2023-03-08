@@ -21,7 +21,7 @@ a {
 }
 .nav-element {
   text-decoration: none;
-  padding: 9px;
+  padding: 10px;
   font-size: 21.6px;
   align-self: center;
 }
@@ -29,6 +29,7 @@ a {
   width: 200px;
 }
 .servicenow {
+  vertical-align: middle;
   width: 126px;
 }
 ul {
@@ -41,7 +42,7 @@ ul {
   align-items: center;
 }
 .book-demo {
-  font-size: 11.6px;
+  font-size: 15px;
   font-weight: 900;
   letter-spacing: 0.24em;
   padding: 9px 20px;
@@ -52,10 +53,15 @@ ul {
   color: whitesmoke;
 }
 .book-demo:hover {
-  background: white;
-  color: black;
+  background: whitesmoke;
+  color: #353535;
   cursor: pointer;
 }
+.arrow {
+  padding: 0;
+  color: whitesmoke;
+}
+
 .main {
   display: flex;
   justify-content: space-around;
@@ -86,8 +92,11 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-.f-ele {
+.footer-ele {
   color: #353535;
+  text-decoration: none;
+  font-size: 25px;
+  margin-top: 10px;
 }
 .footer-logo {
   width: 215px;
@@ -101,9 +110,7 @@ footer {
 .footer-list-items {
   display: flex;
 }
-li {
-  gap: 10px;
-}
+
 span {
   background-color: #dbf3ff;
   color: #002233;
@@ -113,7 +120,7 @@ span {
   font-size: 35px;
 }
 .head-text {
-  font-size: 50px;
+  font-size: 60px;
   margin-bottom: 15px;
 }
 .icon {
@@ -140,6 +147,7 @@ p {
   font-size: 20px;
 }
 .achievements {
+  margin-bottom: 50px;
   color: #353535;
   text-align: center;
 }
@@ -150,7 +158,7 @@ p {
   display: flex;
   flex-direction: column;
   padding: 30px 30px 50px 30px;
-  width: 300px;
+  width: 200px;
   background: #dbf3ff;
   border-radius: 30px;
   box-shadow: 5px 5px 1px #002233;
@@ -169,4 +177,39 @@ p {
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
+}
+.kaptius-flow {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px 100px;
+  background-color: #002233;
+}
+.kaptius-flow p {
+  font-size: 50px;
+}
+.flow-servicenow {
+  vertical-align: middle;
+  width: 232px;
+  height: 60px;
+}
+.background {
+  width: 508px;
+}
+.center-logo {
+  position: relative;
+}
+.flow-logo {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 203px;
+}
+social-media {
+  display: flex;
+  flex-direction: column;
+}
+i {
+  color: #002233;
+  padding: 20px;
 }
