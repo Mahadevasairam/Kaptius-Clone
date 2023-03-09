@@ -1,8 +1,20 @@
+html {
+  overflow-x: hidden;
+}
 @font-face {
   font-family: Gilroy;
   src: url(assests/Gilroy-ExtraBold.otf);
 }
-
+#menu {
+  display: none;
+}
+#wrong {
+  display: none;
+}
+.bars {
+  color: whitesmoke;
+  font-size: large;
+}
 body {
   background: whitesmoke;
   color: whitesmoke;
@@ -217,7 +229,11 @@ i {
   color: #002233;
   padding: 20px;
 }
-@media only screen and (max-width: 992px) {
+
+@media only screen and (max-width: 1150px) {
+  #menu {
+    display: block;
+  }
   .kaptius-flow p {
     text-align: center;
     font-size: 30px;
@@ -259,8 +275,23 @@ i {
   .ach-card {
     margin: 15px 0;
   }
+  .list-items-container {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+  }
+
+  .open {
+    background: rgb(255, 255, 255, 0.2);
+    right: 30px;
+    transition: 0.2s ease-in-out;
+  }
+  .nav-element:hover {
+    transition: 0.2s ease;
+  }
   .list-items {
     flex-direction: column;
+    padding: 20px;
   }
   .main {
     flex-direction: column;
@@ -284,4 +315,24 @@ i {
   .footer-list-items {
     justify-content: space-evenly;
   }
+  .kaptius-flow {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
